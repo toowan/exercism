@@ -12,11 +12,11 @@ Bob.prototype.hey = function(input) {
 		return 'Whoa, chill out!';
 	} 
 	// If input is a question (? has to be at the end of string)
-	if (input[input.length -1] === '?') {
+	else if (input[input.length -1] === '?') {
 		return 'Sure.';
 	} 
 	// if input is nothing (trim removes whitespace)
-	if (input.trim().length === 0) {
+	else if (input.trim().length === 0) {
 		return 'Fine. Be that way!';
 	} 
 	// if anything else
